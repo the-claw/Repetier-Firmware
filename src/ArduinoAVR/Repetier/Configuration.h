@@ -533,13 +533,13 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define AXISCOMP_TANYZ 0
 #define AXISCOMP_TANXZ 0
 
-#ifndef SDSUPPORT  // Some boards have sd support on board. These define the values already in pins.h
+#undef SDSUPPORT
 #define SDSUPPORT 0
 #undef SDCARDDETECT
 #define SDCARDDETECT -1
 #undef SDCARDDETECTINVERTED
 #define SDCARDDETECTINVERTED 0
-#endif
+
 #define SD_EXTENDED_DIR 1 /** Show extended directory including file length. Don't use this with Pronterface! */
 #define SD_RUN_ON_STOP ""
 #define SD_STOP_HEATER_AND_MOTORS_ON_STOP 0
