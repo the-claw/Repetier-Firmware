@@ -2039,6 +2039,12 @@ void Commands::processMCode(GCode *com) {
 #endif
         }
         break;
+	case 118: // M118 message to host
+		if(com->hasString()) {
+		  Com::print(com->text);
+		  Com::println();
+		}
+		break;
     case 119: // M119
         Com::writeToAll = false;
         Commands::waitUntilEndOfAllMoves();
