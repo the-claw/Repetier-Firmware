@@ -1,15 +1,27 @@
 {
     "configurations": [
         {
-            "name": "Linux",
-            "includePath": [
-                "/home/steve/.arduino15/packages/Sanguino/hardware/avr/1.0.3/**"
+            "name": "Arduino",
+            "defines": [
+                "F_CPU=16000000L",
+                "ARDUINO=10809",
+                "ARDUINO_AVR_SANGUINO",
+                "ARDUINO_ARCH_AVR"
             ],
-            "forcedInclude": [],
-            "intelliSenseMode": "gcc-x64",
-            "compilerPath": "/usr/bin/gcc",
-            "cStandard": "c11",
-            "cppStandard": "c++17"
+            "includePath": [
+                "/opt/arduino-1.8.9/hardware/arduino/avr/cores/arduino",
+                "/home/steve/.arduino15/packages/Sanguino/hardware/avr/1.0.3/variants/sanguino",
+                "${workspaceRoot}"
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": false,
+                "path": [
+                    "/opt/arduino-1.8.9/hardware/arduino/avr/cores/arduino",
+                    "/home/steve/.arduino15/packages/Sanguino/hardware/avr/1.0.3/variants/sanguino",
+                    "${workspaceRoot}"
+                ]
+            },
+            "intelliSenseMode": "gcc-x64"
         }
     ],
     "version": 4
