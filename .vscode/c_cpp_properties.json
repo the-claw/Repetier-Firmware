@@ -6,23 +6,7 @@
                 "F_CPU=16000000L",
                 "ARDUINO=10809",
                 "ARDUINO_AVR_SANGUINO",
-                "ARDUINO_ARCH_AVR",
-                "__AVR_ATmega1284P__",
-                "__AVR_DEVICE_NAME__=atmega1284p",
-                "__SIZEOF_LONG__=4",
-                "__SIZEOF_INT__=2",
-                "__SIZEOF_POINTER__=2",
-                "__SIZEOF_SIZE_T__=2",
-                "__SIZEOF_WINT_T__=2",
-                "__SIZEOF_PTRDIFF_T__=2",
-                "__SIZEOF_SHORT__=2",
-                "__SIZEOF_WCHAR_T__=2",
-                "__SIZEOF_DOUBLE__=4",
-                "__SIZEOF_LONG_LONG__=8",
-                "__SIZEOF_LONG_DOUBLE__=4",
-                "__SIZEOF_FLOAT__=4",
-                "__SIZE_MAX__=0xffffU"
-
+                "ARDUINO_ARCH_AVR"
             ],
             "includePath": [
                 "${config:arduino.path}/hardware/arduino/avr/cores/arduino",
@@ -31,6 +15,8 @@
                 "${env:HOME}/.arduino15/packages/Sanguino/hardware/avr/1.0.3/variants/sanguino",
                 "${workspaceRoot}"
             ],
+            "compilerPath": "${env:HOME}/.arduino15/packages/arduino/tools/avr-gcc/5.4.0-atmel3.6.1-arduino2/bin/avr-g++",
+            "compilerArgs": ["-Os", "-std=gnu++11", "-fpermissive", "-fno-exceptions", "-ffunction-sections", "-fdata-sections", "-fno-threadsafe-statics", "-Wno-error=narrowing", "-MMD", "-flto", "-mmcu=atmega1284p" ],
             "browse": {
                 "limitSymbolsToIncludedHeaders": false,
                 "path": [
