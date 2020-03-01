@@ -1,3 +1,20 @@
+_Note_ This version is customised for a Monoprice Maker Select v2.1 (Wanhao 
+Duplicator i3).
+
+**Use this at your own risk** - I accept no liability for any losses or damages
+resulting from the use of this this modified firmware.
+
+The following customisations are applied:
+
+- Configuration.h settings. These have been customised for the MMS2.1. The fan has 
+been changed from PDM to PWM which gives better results with my aftermarket 
+centrifugal fan, otherwise the settings are fairly basic.
+- Added support for gcode M118 "Echo to host" which enables support for Octoprint 
+action commands. (e.g. M118 // action:my_action)
+- Support for development in Visual Studio Code with the Arduino extension.
+
+Original readme follows:
+
 # Repetier-Firmware - the fast and user friendly firmware
 
 ## Notes for developers/pull requests
