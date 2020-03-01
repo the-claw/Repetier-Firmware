@@ -6,22 +6,42 @@
                 "F_CPU=16000000L",
                 "ARDUINO=10809",
                 "ARDUINO_AVR_SANGUINO",
-                "ARDUINO_ARCH_AVR"
+                "ARDUINO_ARCH_AVR",
+                "__AVR_ATmega1284P__",
+                "__AVR_DEVICE_NAME__=atmega1284p",
+                "__SIZEOF_LONG__=4",
+                "__SIZEOF_INT__=2",
+                "__SIZEOF_POINTER__=2",
+                "__SIZEOF_SIZE_T__=2",
+                "__SIZEOF_WINT_T__=2",
+                "__SIZEOF_PTRDIFF_T__=2",
+                "__SIZEOF_SHORT__=2",
+                "__SIZEOF_WCHAR_T__=2",
+                "__SIZEOF_DOUBLE__=4",
+                "__SIZEOF_LONG_LONG__=8",
+                "__SIZEOF_LONG_DOUBLE__=4",
+                "__SIZEOF_FLOAT__=4",
+                "__SIZE_MAX__=0xffffU"
+
             ],
             "includePath": [
-                "/opt/arduino-1.8.9/hardware/arduino/avr/cores/arduino",
-                "/home/steve/.arduino15/packages/Sanguino/hardware/avr/1.0.3/variants/sanguino",
+                "${config:arduino.path}/hardware/arduino/avr/cores/arduino",
+                "${config:arduino.path}/hardware/tools/avr/avr/include",
+                "${config:arduino.path}/hardware/arduino/avr/libraries/**",
+                "${env:HOME}/.arduino15/packages/Sanguino/hardware/avr/1.0.3/variants/sanguino",
                 "${workspaceRoot}"
             ],
             "browse": {
                 "limitSymbolsToIncludedHeaders": false,
                 "path": [
-                    "/opt/arduino-1.8.9/hardware/arduino/avr/cores/arduino",
-                    "/home/steve/.arduino15/packages/Sanguino/hardware/avr/1.0.3/variants/sanguino",
+                    "${config:arduino.path}/hardware/arduino/avr/cores/arduino",
+                    "${config:arduino.path}/hardware/tools/avr/avr/include",
+                    "${config:arduino.path}/hardware/arduino/avr/libraries/**",
+                    "${env:HOME}/.arduino15/packages/Sanguino/hardware/avr/1.0.3/variants/sanguino",
                     "${workspaceRoot}"
                 ]
             },
-            "intelliSenseMode": "gcc-x64"
+            "intelliSenseMode": "gcc-x86"
         }
     ],
     "version": 4

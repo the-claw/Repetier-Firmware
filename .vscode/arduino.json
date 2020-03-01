@@ -2,5 +2,6 @@
     "sketch": "src/ArduinoAVR/Repetier/Repetier.ino",
     "board": "Sanguino:avr:sanguino",
     "configuration": "cpu=atmega1284p",
-    "programmer": "AVR ISP"
+    "programmer": "AVR ISP",
+    "port": "/dev/ttyUSB0"
 }
